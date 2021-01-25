@@ -2,12 +2,6 @@
 
 return [
 
-<<<<<<< HEAD
-    'Dashboard'=>'لوحة التحكم',
-    'Dashboard_page'=>'لوحة التحكم',
-    'change_language'=>'تغير اللغة'
-
-=======
     'Dashboard'=>'الرئيسية',
     'Dashboard_page'=>'لوحة التحكم',
     'Main_title'=>'برنامج مورا سوفت لادارة المدارس',
@@ -30,7 +24,5 @@ return [
     'Users'=>'المستخدمين',
     'Copyright' => 'جميع الحقوق محفوظة ',
     'Name_Programer' => 'سمير جمال مورا سوفت'
->>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
-
 
 ];
