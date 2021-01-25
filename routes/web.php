@@ -14,20 +14,36 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
+Auth::routes();
+
+Route::group(['middleware' => ['guest']], function () {
+
+    Route::get('/', function () {
+        return view('auth.login');
+    });
+
+});
 
 
+ //==============================Translate all pages============================
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
+    ], function () {
 
-    Route::get('/', function()
-    {
-        return view('dashboard');
+     //==============================dashboard============================
+    Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+
+   //==============================dashboard============================
+    Route::group(['namespace' => 'Grades'], function () {
+        Route::resource('Grades', 'GradeController');
     });
 
+    //==============================Classrooms============================
+    Route::group(['namespace' => 'Classrooms'], function () {
+        Route::resource('Classrooms', 'ClassroomController');
+    });
 
-    Route::resource('grade', 'GradeController');
 
 });
