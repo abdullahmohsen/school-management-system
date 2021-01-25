@@ -51,7 +51,11 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+<<<<<<< HEAD
                                     {{ Auth::user()->name }} <span class="caret"></span>
+=======
+                                    {{ Auth::user()->name }}
+>>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -61,7 +65,11 @@
                                         {{ __('Logout') }}
                                     </a>
 
+<<<<<<< HEAD
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+=======
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+>>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
                                         @csrf
                                     </form>
                                 </div>

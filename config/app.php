@@ -161,6 +161,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
+=======
+        Yoeunes\Toastr\ToastrServiceProvider::class,
+>>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
 
         /*
          * Package Service Providers...
