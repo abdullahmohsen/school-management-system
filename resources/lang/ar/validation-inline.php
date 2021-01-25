@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Validation Language Lines
@@ -89,7 +90,7 @@ return [
         'string'  => 'يجب أن يكون طول النص :attribute على الأقل :min حروفٍ/حرفًا.',
         'array'   => 'يجب أن يحتوي :attribute على الأقل على :min عُنصرًا/عناصر.',
     ],
-    'multiple_of'          => ':attribute يجب أن يكون من مضاعفات :value',
+    'multiple_of'          => 'يجب أن تكون القيمة من مضاعفات :value',
     'not_in'               => 'العنصر :attribute غير صحيح.',
     'not_regex'            => 'صيغة :attribute غير صحيحة.',
     'numeric'              => 'يجب على :attribute أن يكون رقمًا.',
@@ -135,63 +136,4 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Attributes
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used to swap attribute place-holders
-    | with something more reader friendly such as E-Mail Address instead
-    | of "email". This simply helps us make messages a little cleaner.
-    |
-    */
-
-    'attributes' => [
-        'name'                  => 'الاسم',
-        'username'              => 'اسم المُستخدم',
-        'email'                 => 'البريد الالكتروني',
-        'first_name'            => 'الاسم الأول',
-        'last_name'             => 'اسم العائلة',
-        'password'              => 'كلمة المرور',
-        'password_confirmation' => 'تأكيد كلمة المرور',
-        'city'                  => 'المدينة',
-        'country'               => 'الدولة',
-        'address'               => 'العنوان',
-        'phone'                 => 'الهاتف',
-        'mobile'                => 'الجوال',
-        'age'                   => 'العمر',
-        'sex'                   => 'الجنس',
-        'gender'                => 'النوع',
-        'day'                   => 'اليوم',
-        'month'                 => 'الشهر',
-        'year'                  => 'السنة',
-        'hour'                  => 'ساعة',
-        'minute'                => 'دقيقة',
-        'second'                => 'ثانية',
-        'title'                 => 'العنوان',
-        'content'               => 'المُحتوى',
-        'description'           => 'الوصف',
-        'excerpt'               => 'المُلخص',
-        'date'                  => 'التاريخ',
-        'time'                  => 'الوقت',
-        'available'             => 'مُتاح',
-        'size'                  => 'الحجم',
-        'ar' => [
-            'name' => 'الاسم بالغه العربيه',
-            'title' => 'العنوان بالغه العربيه',
-            'description' => 'الوصف بالغه العربيه',
-        ],
-
-        'en' => [
-            'name' => 'الاسم بالغه الانجليزيه',
-            'title' => 'العنوان بالغه الانجليزيه',
-            'description' => 'الوصف بالغه الانجليزيه',
-        ],
-
-        'category_id' => 'القسم',
-        'purchase_price' => 'سعر الشراء',
-        'sale_price' => 'سعر البيع',
-        'stock' => 'الكمية في المخزن',
-        'phone.0' => 'الهاتف',
-    ],
 ];
