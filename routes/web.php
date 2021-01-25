@@ -65,6 +65,11 @@ Route::group(
         Route::resource('Grades', 'GradeController');
     });
 
+    //==============================Classrooms============================
+    Route::group(['namespace' => 'Classrooms'], function () {
+        Route::resource('Classrooms', 'ClassroomController');
+    });
+
 
 });
 >>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
