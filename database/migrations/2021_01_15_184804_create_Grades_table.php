@@ -19,4 +19,4 @@ class CreateGradesTable extends Migration {
 	{
 		Schema::drop('Grades');
 	}
-}
+

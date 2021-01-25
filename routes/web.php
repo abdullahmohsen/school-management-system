@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,32 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
-
-
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
-
-    Route::get('/', function()
-    {
-        return view('dashboard');
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
-=======
 Auth::routes();
 
 Route::group(['middleware' => ['guest']], function () {
@@ -67,4 +42,3 @@ Route::group(
 
 
 });
->>>>>>> cce712a6e9569c318887f2b584ea05b3d5e68e66
